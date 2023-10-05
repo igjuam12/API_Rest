@@ -12,7 +12,7 @@ public class LibroServiceImpl extends  BaseServiceImpl<Libro,Long> implements Li
     @Autowired
     private LibroRepository libroRepository;
 
-    public LibroServiceImpl(BaseRepository baseRepository, LibroRepository libroRepository) {
+    public LibroServiceImpl(BaseRepository<Libro,Long> baseRepository, LibroRepository libroRepository) {
         super(baseRepository);
         this.libroRepository = libroRepository;
     }

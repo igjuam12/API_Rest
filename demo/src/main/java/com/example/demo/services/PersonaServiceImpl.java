@@ -12,7 +12,7 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona,Long> implements
     @Autowired
     private PersonaRepository personaRepository;
 
-    public PersonaServiceImpl(BaseRepository baseRepository, PersonaRepository personaRepository) {
+    public PersonaServiceImpl(BaseRepository<Persona,Long> baseRepository, PersonaRepository personaRepository) {
         super(baseRepository);
         this.personaRepository = personaRepository;
     }

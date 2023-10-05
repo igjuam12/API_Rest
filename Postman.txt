@@ -1,0 +1,80 @@
+-Localidad
+http://localhost:8080/api/v1/localidad
+
+{
+    "denominacion" : "Lujan de Cuyo"
+}
+
+-Domicilio
+http://localhost:8080/api/v1/domicilio
+
+{
+    "calle" : "Viedma",
+    "numero" : 216,
+    "localidad" : {
+        "id" : 1,
+        "nombre" : "Lujan de Cuyo"
+    }
+}
+
+-Autor
+http://localhost:8080/api/v1/autores
+
+{
+ "nombre" : "Juan",
+ "apellido" : "Gonzales",
+ "biografia" : "Hola soy Juan Gonzales"
+}
+
+-Libro
+http://localhost:8080/api/v1/libro
+
+{
+    "titulo": "El secreto de la rana embrujada",
+    "fecha": 2020,
+    "genero": "Aventura",
+    "paginas": 20,
+    "autores": [
+        {
+            "id": 1,
+            "nombre": "Juan",
+            "apellido": "Gonzales",
+            "biografia": "Hola soy Juan Gonzales"
+        }
+    ]
+}
+
+-Persona
+http://localhost:8080/api/v1/persona
+
+{
+    "nombre" : "Ignacio",
+    "apellido" : "Ambrogetti",
+    "DNI" : 44404913,
+        "libro" : [
+        {
+        "id": 1,
+        "titulo": "El secreto de la rana embrujada",
+        "fecha": 2020,
+        "genero": "Aventura",
+        "paginas": 20,
+            "autores": [
+                {
+                "id": 1,
+                "nombre": "Juan",
+                "apellido": "Gonzales",
+                "biografia": "Hola soy Juan Gonzales"
+                }
+            ]
+        }
+    ],
+    "domicilio" : {
+        "id": 1,
+        "calle": "Viedma",
+        "numero": 216,
+        "localidad": {
+            "id": 1,
+            "denominacion": "Lujan de Cuyo"
+        }
+    }
+}

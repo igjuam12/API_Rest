@@ -12,7 +12,7 @@ public class DomicilioServiceImpl extends BaseServiceImpl<Domicilio,Long> implem
     @Autowired
     private DomicilioRepository domicilioRepository;
 
-    public DomicilioServiceImpl(BaseRepository baseRepository, DomicilioRepository domicilioRepository) {
+    public DomicilioServiceImpl(BaseRepository<Domicilio,Long> baseRepository, DomicilioRepository domicilioRepository) {
         super(baseRepository);
         this.domicilioRepository = domicilioRepository;
     }
